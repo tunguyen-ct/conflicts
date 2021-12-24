@@ -30,3 +30,19 @@ function greet(name) {
 The first member is merged first because their feature can be done faster. The second go after and encounter merge-conflicts.
 
 ...
+
+What is conflict in Git?
+
+Phần "file changes" trong Github tab chính là phần so sánh giữa phiên bản "tôi của hiện tại" so với "tôi của ngày hôm qua".
+
+Tuy nhiên, ký ức về tôi của ngày hôm qua được lưu giữ trong tôi là một snapshot, là một thứ cố định.
+
+Khi tôi muốn nhập tôi của hiện tại với tôi của ngày hôm qua, thì tôi không thể làm được => CONFLICTS.
+
+Bởi vì một ai đó, đã thay đổi "tôi của ngày hôm qua", khiến cho snapshot tôi đang có, khác đi so với cái real. Giờ tôi phải RESOLVE CONFLICTS.
+
+Cách 1: Rebase
+Đây là cách mà tôi sẽ cập nhật lại snapshot của mình. Để cho snapshot đó trùng khớp với cái thực.
+
+Cách 2: Merge
+Như thế này, thì cái snapshot của tôi cũng sẽ giống như thực, nhưng sẽ có khác đôi chút về history.
